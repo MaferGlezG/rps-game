@@ -5,27 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="header">
+        <ul>
+            <a href="https://github.com/MaferGlezG/rps-game">
+                <h3>Source code</h3>
+            </a>
+            <a href="https://github.com/MaferGlezG">
+                <h3>Github</h3>
+            </a>
+
+
+        </ul>
+    </div>
 
     <h1 class="title">Rock paper scissors, go!</h1>
-    <button id="rock" class="button">I play Rock!</button>
-    <button id="paper" class="button">I play Paper!</button>
-    <button id="scissors" class="button">I play scissors!</button>
-    <script src="./rock-paper-scissors.js"></script>
-    <ol class="results"></ol>
-    <div class="score">
-        Your current score is:
-        <div class="humanScore">
-            <h1>0</h1>
-        </div>
-        The computer's current score is:
-        <div class="pcScore">
-            <h1>0</h1>
+    <div class="buttons">
+        <button id="rock" class="button">I play Rock!</button>
+        <button id="paper" class="button">I play Paper!</button>
+        <button id="scissors" class="button">I play scissors!</button>
+    </div>
+    <div class="gameContent">
+        <ol class="results">
+            <h2>Your plays so far:</h2>
+        </ol>
+        <div class="score">
+            <p>Your current score is:</p>
+            <div class="humanScore">
+                <h1>0</h1>
+            </div>
+            <p>The computer's current score is:</p>
+            <div class="pcScore">
+                <h1>0</h1>
+            </div>
         </div>
     </div>
+
+    <div class="restart"></div>
+
+    <div class="footer" style="font-weight: 800; ">
+        <p>Copyright © Mafer Glez 2022</p>
+        <p>Thank you, <a href="https://www.theodinproject.com/">The Odin Project!</a></p>
+    </div>
+    <script src="./rock-paper-scissors.js"></script>
 </body>
 
 </html>

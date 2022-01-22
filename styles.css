@@ -1,0 +1,111 @@
+:root{
+    --dark-blue: rgb(38, 70, 83);
+    --light-blue: rgb(42, 157, 143);
+    --yellow: rgb(233, 196, 106);
+    --orange: rgb(244, 162, 97);
+    --red: rgb(231, 111, 81);
+}
+
+body{
+    background-color: var(--yellow);
+    font-family: 'Itim', cursive;
+}
+
+.header {
+    background-color: var(--light-blue);
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+p{
+    font-size: 25px;
+}
+
+.footer p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+h1{
+    font-size: 80px;
+
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header ul a {
+    padding-bottom: 5px;
+    padding-right: 30px;
+
+
+}
+.title {
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+ a{
+     text-decoration: none;
+     color: var(--orange);
+ }
+
+ .footer{
+     text-align: center;
+ }
+
+.footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px;
+}
+
+button{
+
+    background-color: var(--red);
+    border: 6px solid var(--dark-blue);
+    color: white;
+    border-radius: 16px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Itim', cursive;
+
+}
+
+button:active {
+    background-color: white;
+    color: var(--dark-blue);
+  }
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.gameContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameContent ol{
+    padding: 5px;
+}
+
+.restart h2 {
+    padding-left: 170px;
+}

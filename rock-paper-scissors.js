@@ -74,7 +74,7 @@ function round(playerSelection) {
     var computerSelection = computerPlay();
     //console.log("Computer played: " + computerSelection, "You played: " + playerSelection);
     if (playerSelection === computerSelection) {
-        return "It's a tie!"
+        return "It's a tie! You both played " + computerSelection
     }
     else if (playerSelection === 'rock') {
         switch (computerSelection) {
@@ -134,6 +134,12 @@ function game() {
         btnRock.style.cssText = 'display : none'
         btnScissors.style.cssText = 'display : none'
         btnPaper.style.cssText = 'display : none'
+
+        const restart = document.querySelector('.restart')
+        const restartHint = document.createElement('h2');
+        const restartHintText = document.createTextNode('Hint: Refresh this page to start over');
+        restartHint.appendChild(restartHintText)
+        restart.appendChild(restartHint);
 
 
 
